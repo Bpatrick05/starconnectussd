@@ -8,6 +8,16 @@ class CoreSavings {
         $this->stan = new Standardizer();
     }
 
+    function getPacks($params) {
+        $req = array(
+            'linked_msisdn' => $params['msisdn'],
+        );
+        $params['endpoint'] = 'packs';
+        $params['reques'] = 'get';
+        $response = $this->CompleteRequest($params, $req, 1);
+        return $response;
+    }
+
     function getCategories($params) {
         $req = array(
             'linked_msisdn' => $params['msisdn'],

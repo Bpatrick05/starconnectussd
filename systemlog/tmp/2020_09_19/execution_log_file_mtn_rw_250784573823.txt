@@ -1,0 +1,74 @@
+[LOG START]
+[2020-09-19 13:11:09] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'sessionId' => '1135',
+  'msisdn' => '250784573823',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-09-19 13:11:10] MTNRW_Model::Handler ManageRequestSession Returning Status 1
+[2020-09-19 13:11:10] COREUSSD::ValidateUserInput Search For Option From 1 When User Choice Is 1
+[2020-09-19 13:11:10] COREUSSD::MenuOptionHandler GetNextState Result: Next Menu State Is 5
+[2020-09-19 13:11:10] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '5',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Packs',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getPacks',
+    'state_indicator' => 'FC',
+    'record_id' => '7',
+    'code' => '505',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Packs
+[OPTIONS]',
+    'text_fr' => 'Pack
+[OPTIONS]',
+    'text_kin' => 'Pake [OPTIONS]',
+  ),
+)
+[2020-09-19 13:11:10] COREUSSD::DisplayMenu PrepareMenu Required to make remote function call to getPacks
+[2020-09-19 13:11:10] COREUSSD::SaveLanguage language to save kin
+[LOG START]
+[2020-09-19 13:23:41] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'sessionId' => '1135',
+  'msisdn' => '250784573823',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-09-19 13:23:41] MTNRW_Model::Handler ManageRequestSession Returning Status 1
+[2020-09-19 13:23:41] COREUSSD::ValidateUserInput Search For Option From 1 When User Choice Is 1
+[2020-09-19 13:23:41] COREUSSD::MenuOptionHandler GetNextState Result: Next Menu State Is 5
+[2020-09-19 13:23:41] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '5',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Packs',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getPacks',
+    'state_indicator' => 'FC',
+    'record_id' => '7',
+    'code' => '505',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Packs
+[OPTIONS]',
+    'text_fr' => 'Pack
+[OPTIONS]',
+    'text_kin' => 'Pake [OPTIONS]',
+  ),
+)
+[2020-09-19 13:23:41] COREUSSD::DisplayMenu PrepareMenu Required to make remote function call to getPacks
+[2020-09-19 13:23:41] COREUSSD::SaveLanguage language to save kin
