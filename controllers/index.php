@@ -13,6 +13,7 @@ class Index extends Controller {
         } else {
             $standard_array = $this->model->ParseRequest($xml_post);
             $response = $this->model->determineNetwork($xml_post, $standard_array);
+            header('Content-Type: application/xml; charset=UTF-8');
             echo $response;
         }
     }

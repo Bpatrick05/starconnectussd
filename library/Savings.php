@@ -8,14 +8,48 @@ class Savings extends Model {
         $this->log = new Logs();
     }
 
-    function getCategories($params){
-
-        
+    function getPacks($params){
         if($params['subscriberInput'] == 2){
             $lang = 'en';
         } else {
             $lang = 'kin';
         }
+
+        $this->SaveLanguage($params,$lang);
+        $response = $this->saving->getPacks($params);
+        // $this->log->ExeLog($params, 'Savings::getCelebrities Response ' . var_export($response, true), 2);
+        $this->log->ExeLog($params, 'Savings::getPacks Response' . var_export($response, true), 2);
+        $final_response = array();
+        if($response['status'] == 200 && $response['message'] == 'success'){
+            $final_response['responsecode'] = 505;
+            $xml = null;
+            $postData = array();
+            $i = 1;
+            foreach($response['packs'] as $key => $value){
+                $postData[$i]['map_id'] = $i;
+                $postData[$i]['reference_id'] = $value['id'];
+                $postData[$i]['reference_text'] = $value['ProductName'];
+                $xml .= $i . ') ' . $value['ProductName'] . ": ". $value['amount'] . PHP_EOL;
+
+                $postData[$i]['phone_number'] = $params['msisdn'];
+                $i++;
+            }
+            $this->StoreDateReferences($params, $postData);
+            $final_response['options'] = $xml;
+        } else {
+            $final_response['responsecode'] = 506;
+        }
+        return $final_response;
+    }
+
+    function getCategories($params){
+
+        
+        // if($params['subscriberInput'] == 2){
+        //     $lang = 'en';
+        // } else {
+        //     $lang = 'kin';
+        // }
         $this->SaveLanguage($params,$lang);
         // print_r("##################### Savings => getCategories");
         // print_r($lang);
@@ -69,7 +103,7 @@ class Savings extends Model {
             $this->StoreDateReferences($params, $postData);
             $final_response['options'] = $xml;
         }else {
-            $final_response['responsecode'] = 501;
+            $final_response['responsecode'] = 503;
         }
         return $final_response;
     }

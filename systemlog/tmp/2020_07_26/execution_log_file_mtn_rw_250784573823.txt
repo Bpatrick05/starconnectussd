@@ -1,0 +1,91 @@
+[LOG START]
+[2020-07-26 18:31:39] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'sessionId' => '1135',
+  'msisdn' => '250784573823',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-07-26 18:31:39] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-07-26 18:31:39] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-07-26 18:31:39] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+1) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+1) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+1) English',
+  ),
+)
+[2020-07-26 18:31:39] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-07-26 18:31:39] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '1135',
+  'telephone_number' => '250784573823',
+  'current_state' => 1,
+)
+[2020-07-26 18:31:39] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-07-26 18:31:39] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-07-26 18:31:39] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+1) English With Data NULL
+[2020-07-26 18:31:39] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250784573823</msisdn><sessionid>1135</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+1) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-07-26 18:31:50] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'sessionId' => '1135',
+  'msisdn' => '250784573823',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-07-26 18:31:50] MTNRW_Model::Handler ManageRequestSession Returning Status 1
+[2020-07-26 18:31:50] COREUSSD::ValidateUserInput Search For Option From 1 When User Choice Is 1
+[2020-07-26 18:31:50] COREUSSD::MenuOptionHandler GetNextState Result: Next Menu State Is 5
+[2020-07-26 18:31:50] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '5',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Packs',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getPacks',
+    'state_indicator' => 'FC',
+    'record_id' => '7',
+    'code' => '505',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Packs
+[OPTIONS]',
+    'text_fr' => 'Pack
+[OPTIONS]',
+    'text_kin' => 'Pake [OPTIONS]',
+  ),
+)
+[2020-07-26 18:31:50] COREUSSD::DisplayMenu PrepareMenu Required to make remote function call to getPacks
