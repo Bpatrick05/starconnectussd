@@ -1,0 +1,702 @@
+[LOG START]
+[2020-10-21 19:12:48] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033003688397635',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:12:48] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:12:48] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:12:48] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:12:48] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:12:48] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033003688397635',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:12:48] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:12:48] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:12:48] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:12:48] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033003688397635</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:19:59] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033007992337654',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:19:59] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:19:59] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:19:59] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:19:59] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:19:59] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033007992337654',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:19:59] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:19:59] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:19:59] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:19:59] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033007992337654</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:24:11] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033010511983754',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:24:11] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:24:11] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:24:11] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:24:11] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:24:11] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033010511983754',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:24:11] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:24:11] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:24:11] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:24:11] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033010511983754</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:44:08] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033022489033794',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:44:08] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:44:08] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:44:08] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:44:08] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:44:08] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033022489033794',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:44:08] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:44:08] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:44:08] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:44:08] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033022489033794</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:57:14] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033030341587723',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:57:14] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:57:14] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:57:14] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:57:14] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:57:14] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033030341587723',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:57:14] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:57:14] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:57:14] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:57:14] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033030341587723</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:57:24] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033030446883813',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:57:24] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:57:24] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:57:24] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:57:24] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:57:24] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033030446883813',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:57:24] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:57:24] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:57:24] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:57:24] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033030446883813</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:57:36] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033030563047724',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:57:36] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:57:36] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:57:36] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:57:36] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:57:36] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033030563047724',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:57:36] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:57:36] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:57:36] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:57:36] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033030563047724</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:58:56] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033031364883817',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:58:56] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:58:56] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:58:56] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:58:56] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:58:56] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033031364883817',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:58:56] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:58:56] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:58:56] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:58:56] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033031364883817</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 19:59:44] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033031842467729',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 19:59:44] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 19:59:44] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 19:59:44] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 19:59:44] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 19:59:44] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033031842467729',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 19:59:44] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 19:59:44] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 19:59:44] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 19:59:44] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033031842467729</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 20:03:33] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033034133403823',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 20:03:33] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 20:03:33] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 20:03:33] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 20:03:33] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 20:03:33] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033034133403823',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 20:03:33] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 20:03:33] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 20:03:33] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 20:03:33] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033034133403823</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 20:24:48] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033046890107756',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 20:24:48] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 20:24:48] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 20:24:48] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 20:24:48] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 20:24:48] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033046890107756',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 20:24:48] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 20:24:48] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 20:24:48] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 20:24:48] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033046890107756</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 20:25:00] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516*1',
+  'sessionId' => '16033047000817757',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 20:25:00] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 20:25:00] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 20:25:00] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 20:25:00] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 20:25:00] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033047000817757',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 20:25:00] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 20:25:00] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 20:25:00] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 20:25:00] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033047000817757</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-21 21:18:54] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'subscriberInput' => '516',
+  'sessionId' => '16033079343683896',
+  'msisdn' => '250788626240',
+  'newRequest' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-21 21:18:54] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-21 21:18:54] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-21 21:18:54] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-21 21:18:54] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-21 21:18:54] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => '16033079343683896',
+  'telephone_number' => '250788626240',
+  'current_state' => 1,
+)
+[2020-10-21 21:18:54] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-21 21:18:54] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-21 21:18:54] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-21 21:18:54] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250788626240</msisdn><sessionid>16033079343683896</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
