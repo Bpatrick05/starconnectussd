@@ -1,0 +1,239 @@
+[LOG START]
+[2020-10-30 14:35:52] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'sessionId' => 'SRV1158',
+  'msisdn' => '250784573825',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-30 14:35:52] MTNRW_Model::Handler ManageRequestSession Returning Status 0
+[2020-10-30 14:35:52] COREUSSD::MenuOptionHandler Initial Session Call. Returned New State ...1
+[2020-10-30 14:35:52] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '1',
+    'state_type' => 'menuchoice',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'welcome',
+    'fxn_call_flag' => '0',
+    'call_fxn_name' => '',
+    'state_indicator' => 'FC',
+    'record_id' => '1',
+    'code' => '0',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_fr' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+    'text_kin' => 'Welcome/Urakaza neza
+1) Kinyarwanda
+2) English',
+  ),
+)
+[2020-10-30 14:35:52] Model::OperationWatch called for state ID: 1 With Params: NULL
+[2020-10-30 14:35:52] Model::SetCurrentState Initial State Setting With Dataarray (
+  'session_id' => 'SRV1158',
+  'telephone_number' => '250784573825',
+  'current_state' => 1,
+)
+[2020-10-30 14:35:52] COREUSSD::DisplayMenu PrepareMenu No Remote Function Call Required
+[2020-10-30 14:35:52] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-30 14:35:52] COREUSSD::ReplacePlaceHolders Fired for Welcome/Urakaza neza
+1) Kinyarwanda
+2) English With Data NULL
+[2020-10-30 14:35:52] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250784573825</msisdn><sessionid>SRV1158</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Welcome/Urakaza neza
+1) Kinyarwanda
+2) English</applicationResponse></response>
+
+[LOG STOP]
+[LOG START]
+[2020-10-30 14:42:22] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'sessionId' => 'SRV1158',
+  'msisdn' => '250784573825',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-30 14:42:22] MTNRW_Model::Handler ManageRequestSession Returning Status 1
+[2020-10-30 14:42:22] COREUSSD::ValidateUserInput Search For Option From 1 When User Choice Is 1
+[2020-10-30 14:42:22] COREUSSD::MenuOptionHandler GetNextState Result: Next Menu State Is 2
+[2020-10-30 14:42:22] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '2',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Categories',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getCategories',
+    'state_indicator' => 'FC',
+    'record_id' => '2',
+    'code' => '500',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Categories
+[OPTIONS]',
+    'text_fr' => 'Categorie[OPTIONS]',
+    'text_kin' => 'Ibyiciro [OPTIONS]',
+  ),
+  1 => 
+  array (
+    'state_id' => '2',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Categories',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getCategories',
+    'state_indicator' => 'FC',
+    'record_id' => '3',
+    'code' => '501',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'NO Categories found',
+    'text_fr' => 'NO Categories found',
+    'text_kin' => 'Nta byiciro bibashije kuboneka.',
+  ),
+)
+[2020-10-30 14:42:22] COREUSSD::DisplayMenu PrepareMenu Required to make remote function call to getCategories
+[2020-10-30 14:42:22] COREUSSD::SaveLanguage language to save 
+[2020-10-30 14:42:22] CoreSavings::CompleteRequest Fired For  With Data array (
+  'linked_msisdn' => '250784573825',
+)
+[2020-10-30 14:42:22] CoreSavings:: Test params contentarray (
+  'requesttype' => 'pull',
+  'sessionId' => 'SRV1158',
+  'msisdn' => '250784573825',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+  'execlogfile' => 'systemlog/tmp/2020_10_30/execution_log_file_mtn_rw_250784573825.txt',
+  'endpoint' => 'categories',
+  'request' => 'get',
+)
+[2020-10-30 14:42:22] CoreSavings::CompleteRequest Preparing to send Request {"linked_msisdn":"250784573825","username":"mtn_rw","password":"81ca79d78ba6b6a0d5bfbc5e3d5140b7","timestamp":"20201030144222"} To http://localhost/callstarapi/categories
+[2020-10-30 14:42:22] CoreSavings::CompleteRequest SendByCURL Response XML {"status":200,"message":"success","categories":[{"id":3,"category_name":"Artist","status":"active"},{"id":4,"category_name":"footballers ","status":"active"},{"id":5,"category_name":"Comedian","status":"active"}]}
+[2020-10-30 14:42:22] CoreSavings::ParseRequest Fired for {"status":200,"message":"success","categories":[{"id":3,"category_name":"Artist","status":"active"},{"id":4,"category_name":"footballers ","status":"active"},{"id":5,"category_name":"Comedian","status":"active"}]}
+[2020-10-30 14:42:22] CoreSavings::CompleteRequest Response Array array (
+  'status' => 200,
+  'message' => 'success',
+  'categories' => 
+  array (
+    0 => 
+    array (
+      'id' => 3,
+      'category_name' => 'Artist',
+      'status' => 'active',
+    ),
+    1 => 
+    array (
+      'id' => 4,
+      'category_name' => 'footballers ',
+      'status' => 'active',
+    ),
+    2 => 
+    array (
+      'id' => 5,
+      'category_name' => 'Comedian',
+      'status' => 'active',
+    ),
+  ),
+)
+[2020-10-30 14:42:22] Savings::getCategories Response array (
+  'status' => 200,
+  'message' => 'success',
+  'categories' => 
+  array (
+    0 => 
+    array (
+      'id' => 3,
+      'category_name' => 'Artist',
+      'status' => 'active',
+    ),
+    1 => 
+    array (
+      'id' => 4,
+      'category_name' => 'footballers ',
+      'status' => 'active',
+    ),
+    2 => 
+    array (
+      'id' => 5,
+      'category_name' => 'Comedian',
+      'status' => 'active',
+    ),
+  ),
+)
+[2020-10-30 14:42:23] Savings::StoreDateReferences last value 
+[2020-10-30 14:42:23] Savings::StoreDateReferences last value 
+[2020-10-30 14:42:23] Savings::StoreDateReferences last value 
+[2020-10-30 14:42:23] COREUSSD::Externalfunction call getCategories: Result array (
+  'responsecode' => 500,
+  'options' => '1) Artist
+2) footballers 
+3) Comedian
+',
+)
+[2020-10-30 14:42:23] COREUSSD::GetFullStateByRCode call Get Response Message Call Result array (
+  0 => 
+  array (
+    'state_id' => '2',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Categories',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getCategories',
+    'state_indicator' => 'FC',
+    'record_id' => '2',
+    'code' => '500',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Categories
+[OPTIONS]',
+    'text_fr' => 'Categorie[OPTIONS]',
+    'text_kin' => 'Ibyiciro [OPTIONS]',
+  ),
+)
+[2020-10-30 14:42:23] Model::OperationWatch called for state ID: 2 With Params: NULL
+[2020-10-30 14:42:23] Model::SetCurrentState ref dataarray (
+  0 => 
+  array (
+    'record_id' => '339',
+    'session_id' => 'SRV1158',
+    'telephone_number' => '250784573825',
+    'previous_state' => NULL,
+    'current_state' => '1',
+  ),
+)
+[2020-10-30 14:42:23] Model::SetCurrentState Updating Session Record 339 State with Data array (
+  'current_state' => '2',
+)
+[2020-10-30 14:42:23] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_en
+[2020-10-30 14:42:23] COREUSSD::ReplacePlaceHolders Fired for Categories
+[OPTIONS] With Data array (
+  'responsecode' => 500,
+  'options' => '1) Artist
+2) footballers 
+3) Comedian
+',
+)
+[2020-10-30 14:42:23] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250784573825</msisdn><sessionid>SRV1158</sessionid><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Categories
+1) Artist
+2) footballers 
+3) Comedian
+</applicationResponse></response>
+
+[LOG STOP]
