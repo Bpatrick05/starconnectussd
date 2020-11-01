@@ -1,0 +1,196 @@
+[LOG START]
+[2020-10-29 11:38:01] MTNRW_Model::Handler Function Call With Data Set array (
+  'requesttype' => 'pull',
+  'sessionId' => '1168',
+  'msisdn' => '250784573823',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+)
+[2020-10-29 11:38:01] MTNRW_Model::Handler ManageRequestSession Returning Status 1
+[2020-10-29 11:38:01] COREUSSD::ValidateUserInput Search For Option From 1 When User Choice Is 1
+[2020-10-29 11:38:01] COREUSSD::MenuOptionHandler GetNextState Result: Next Menu State Is 5
+[2020-10-29 11:38:01] COREUSSD::DisplayMenu GetFullStateByID Returning Array for the menu array (
+  0 => 
+  array (
+    'state_id' => '5',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Packs',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getPacks',
+    'state_indicator' => 'FC',
+    'record_id' => '7',
+    'code' => '505',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Packs
+[OPTIONS]',
+    'text_fr' => 'Pack
+[OPTIONS]',
+    'text_kin' => 'Pake [OPTIONS]',
+  ),
+  1 => 
+  array (
+    'state_id' => '5',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Packs',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getPacks',
+    'state_indicator' => 'FC',
+    'record_id' => '8',
+    'code' => '506',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'No Packs found',
+    'text_fr' => 'No Packs found',
+    'text_kin' => 'Nta Pake zibashije kuboneka',
+  ),
+)
+[2020-10-29 11:38:01] COREUSSD::DisplayMenu PrepareMenu Required to make remote function call to getPacks
+[2020-10-29 11:38:01] COREUSSD::SaveLanguage language to save kin
+[2020-10-29 11:38:01] CoreSavings::CompleteRequest Fired For  With Data array (
+  'linked_msisdn' => '250784573823',
+)
+[2020-10-29 11:38:01] CoreSavings:: Test params contentarray (
+  'requesttype' => 'pull',
+  'sessionId' => '1168',
+  'msisdn' => '250784573823',
+  'newRequest' => '0',
+  'flowState' => 'FE',
+  'subscriberInput' => '1',
+  'vendor' => 'mtn_rw',
+  'execlogfile' => 'systemlog/tmp/2020_10_29/execution_log_file_mtn_rw_250784573823.txt',
+  'endpoint' => 'packs',
+  'reques' => 'get',
+)
+[2020-10-29 11:38:01] CoreSavings::CompleteRequest Preparing to send Request {"linked_msisdn":"250784573823","username":"mtn_rw","password":"8c3d5cf994c98f3a64ab90182aae4c16","timestamp":"20201029113801"} To http://localhost/callstarapi/packs
+[2020-10-29 11:38:03] CoreSavings::CompleteRequest SendByCURL Response XML {"status":200,"message":"success","packs":[{"id":1,"amount":200,"ProductName":"Tracar DailyPack1","pack_length":1,"period":"day"},{"id":2,"amount":500,"ProductName":"Tracar DailyPack3","pack_length":1,"period":"day"},{"id":3,"amount":1000,"ProductName":"Tracar WeeklyPack1","pack_length":1,"period":"week"}]}
+[2020-10-29 11:38:03] CoreSavings::ParseRequest Fired for {"status":200,"message":"success","packs":[{"id":1,"amount":200,"ProductName":"Tracar DailyPack1","pack_length":1,"period":"day"},{"id":2,"amount":500,"ProductName":"Tracar DailyPack3","pack_length":1,"period":"day"},{"id":3,"amount":1000,"ProductName":"Tracar WeeklyPack1","pack_length":1,"period":"week"}]}
+[2020-10-29 11:38:03] CoreSavings::CompleteRequest Response Array array (
+  'status' => 200,
+  'message' => 'success',
+  'packs' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'amount' => 200,
+      'ProductName' => 'Tracar DailyPack1',
+      'pack_length' => 1,
+      'period' => 'day',
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'amount' => 500,
+      'ProductName' => 'Tracar DailyPack3',
+      'pack_length' => 1,
+      'period' => 'day',
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'amount' => 1000,
+      'ProductName' => 'Tracar WeeklyPack1',
+      'pack_length' => 1,
+      'period' => 'week',
+    ),
+  ),
+)
+[2020-10-29 11:38:03] Savings::getPacks Responsearray (
+  'status' => 200,
+  'message' => 'success',
+  'packs' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'amount' => 200,
+      'ProductName' => 'Tracar DailyPack1',
+      'pack_length' => 1,
+      'period' => 'day',
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'amount' => 500,
+      'ProductName' => 'Tracar DailyPack3',
+      'pack_length' => 1,
+      'period' => 'day',
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'amount' => 1000,
+      'ProductName' => 'Tracar WeeklyPack1',
+      'pack_length' => 1,
+      'period' => 'week',
+    ),
+  ),
+)
+[2020-10-29 11:38:04] Savings::StoreDateReferences last value 
+[2020-10-29 11:38:04] Savings::StoreDateReferences last value 
+[2020-10-29 11:38:04] Savings::StoreDateReferences last value 
+[2020-10-29 11:38:04] COREUSSD::Externalfunction call getPacks: Result array (
+  'responsecode' => 505,
+  'options' => '1) Tracar DailyPack1: 200
+2) Tracar DailyPack3: 500
+3) Tracar WeeklyPack1: 1000
+',
+)
+[2020-10-29 11:38:04] COREUSSD::GetFullStateByRCode call Get Response Message Call Result array (
+  0 => 
+  array (
+    'state_id' => '5',
+    'state_type' => 'input',
+    'input_type' => 'numeric',
+    'input_field_name' => NULL,
+    'state_title' => 'Packs',
+    'fxn_call_flag' => '1',
+    'call_fxn_name' => 'getPacks',
+    'state_indicator' => 'FC',
+    'record_id' => '7',
+    'code' => '505',
+    'response_code' => '0',
+    'status' => 'successful',
+    'text_en' => 'Packs
+[OPTIONS]',
+    'text_fr' => 'Pack
+[OPTIONS]',
+    'text_kin' => 'Pake [OPTIONS]',
+  ),
+)
+[2020-10-29 11:38:04] Model::OperationWatch called for state ID: 5 With Params: NULL
+[2020-10-29 11:38:04] Model::SetCurrentState ref dataarray (
+  0 => 
+  array (
+    'record_id' => '161',
+    'session_id' => '1168',
+    'telephone_number' => '250784573823',
+    'previous_state' => NULL,
+    'current_state' => '1',
+  ),
+)
+[2020-10-29 11:38:04] Model::SetCurrentState Updating Session Record 161 State with Data array (
+  'current_state' => '5',
+)
+[2020-10-29 11:38:04] COREUSSD::DisplayMenu PrepareMenu Session Language Is text_kin
+[2020-10-29 11:38:04] COREUSSD::ReplacePlaceHolders Fired for Pake [OPTIONS] With Data array (
+  'responsecode' => 505,
+  'options' => '1) Tracar DailyPack1: 200
+2) Tracar DailyPack3: 500
+3) Tracar WeeklyPack1: 1000
+',
+)
+[2020-10-29 11:38:04] MTNRW_Model::Handler Returning Response <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response><msisdn>250784573823</msisdn><sessionid>1168</sessionid><transactionid/><freeflow><freeflowState>FC</freeflowState></freeflow><applicationResponse>Pake 1) Tracar DailyPack1: 200
+2) Tracar DailyPack3: 500
+3) Tracar WeeklyPack1: 1000
+</applicationResponse></response>
+
+[LOG STOP]

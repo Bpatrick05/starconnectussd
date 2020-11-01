@@ -13,7 +13,16 @@ class Index extends Controller {
         } else {
             $standard_array = $this->model->ParseRequest($xml_post);
             $response = $this->model->determineNetwork($xml_post, $standard_array);
+            // $resp = $this->model->ParseRequest($response);
+            // print_r($response);
+            // die();
+
             header('Content-Type: application/xml; charset=UTF-8');
+            header('Connection: close');
+            header('Freeflow: FC');
+            header('Expires: -1');
+            header('Cache-Control: max-age=0');
+
             echo $response;
         }
     }
