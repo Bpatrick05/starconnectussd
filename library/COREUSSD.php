@@ -127,11 +127,11 @@ class COREUSSD extends Savings {
         $response_array = array(
             'msisdn' => $params['msisdn'],
             'sessionid' => $params['sessionId'],
-            //'transactionid' => $params['transactionId'],
-            // 'freeflow' => array(
-            //     'freeflowState' => $resp['state']
-            // ),
-            'freeflow' => $resp['state'],
+            'transactionid' => $params['transactionId'],
+            'freeflow' => array(
+                'freeflowState' => $resp['state']
+            ),
+            // 'freeflow' => $resp['state'],
             'subscriberinput' => $params['subscriberInput'],
             'newRequest' => $params['newRequest'],
             'applicationResponse' => $resp['msg_response'],

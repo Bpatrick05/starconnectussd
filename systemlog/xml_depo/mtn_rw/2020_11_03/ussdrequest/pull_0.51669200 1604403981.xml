@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<request type="pull">
+	    <sessionId>1176</sessionId>
+        <transactionI>200420161027221645145301</transactionI>
+	    <msisdn>250784573823</msisdn>
+	    <newRequest>0</newRequest>
+	    <flowState>FE</flowState>
+	    <subscriberInput>1</subscriberInput>
+	</request>
