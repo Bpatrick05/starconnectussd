@@ -17,8 +17,12 @@ class MTNRW_Model extends COREUSSD {
         $status = $this->ManageRequestSession($params);
         $this->log->ExeLog($params, 'MTNRW_Model::Handler ManageRequestSession Returning Status ' . $status, 2);
         $response = $this->MenuOptionHandler($params, $status);
+
+        // convert back to string response.
+        $newResponse = $this->MakeStringResponse($response);
+        
         $this->log->ExeLog($params, 'MTNRW_Model::Handler Returning Response ' . $response, 3);
         $this->log->LogXML($params['vendor'], 'ussdresponse', $params['requesttype'], $response);
-        return $response;
+        return $newResponse;
     }
 }

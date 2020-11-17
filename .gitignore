@@ -1,0 +1,4 @@
+config.php
+/library/settings.php
+/systemlog/*
+/nbproject/*
