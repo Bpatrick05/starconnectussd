@@ -18,8 +18,12 @@ class MTNRW extends Controller {
             $standard_array['vendor'] = 'mtn_rw';
             if ($standard_array['requesttype'] == 'pull') {
                 $response_xml = $this->model->Handler($xml_post, $standard_array);
+                // print("####################### mtnrw");
+                // print_r($response_xml);
+                // die();
                 header('Content-Type: application/xml; charset=UTF-8');
-                echo $response_xml;
+                header('FreeFlow:' . $response_xml['freeFlow']);
+                echo $response_xml['applicationResponse'];
             }
             if ($standard_array['requesttype'] == 'cleanup') {
                 $this->model->DoSessionCleanUp($standard_array);

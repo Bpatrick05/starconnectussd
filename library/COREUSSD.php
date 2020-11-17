@@ -48,6 +48,11 @@ class COREUSSD extends Savings {
         return $response;
     }
 
+    function MakeStringResponse($xml) {
+        $standard_array = $this->stan->ParseXMLRequest($xml);
+        return $standard_array;
+    }
+
     function ValidateUserInput($state, $params) {
         if (is_numeric($params['subscriberInput'])) {
             $type = 'numeric';

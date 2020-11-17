@@ -39,6 +39,7 @@ class Standardizer {
         'requests_applied'=>'appliedrequest',  
         'group_balance'=>'group_balance',
         'flowState'=>'flowState',
+        'freeflowState' => 'freeFlow',
         'loanamount'=>'amount',
         'loan_duration'=>'duration',
         'interest_option'=>'interest',
@@ -55,7 +56,8 @@ class Standardizer {
         'user_pin'=>'pin',
         'loan_request_id'=>'request_id',
         'admin_pin'=>'pin',
-        'fine_id'=>'request_id'
+        'fine_id'=>'request_id',
+        'applicationResponse' => 'applicationResponse'
     );
     
 
