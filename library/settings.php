@@ -10,8 +10,8 @@ define('DB_TYPE', 'mysql');
 // error_reporting(E_ALL & ~E_NOTICE);
 define('DB_HOST', 'localhost', true);
 define('DB_PORT', '3306', true);
-define('DB_USER', 'bprick', true);
-define('DB_PASS', 'Btracr@r@dmi_n100%', true);
+define('DB_USER', 'sys_access', true);
+define('DB_PASS', 'password', true);
 define('DB_NAME', 'callstar_ussd', true);
 
 
