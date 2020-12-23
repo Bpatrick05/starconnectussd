@@ -28,6 +28,16 @@ class CoreSavings {
         return $response;
     }
 
+    function processPacks($params) {
+        $req = array(
+            'linked_msisdn' => $params['msisdn'],
+        );
+        $params['endpoint'] = 'packs/processPacks/'. $params['pack_id']. '/' . $params['msisdn'];
+        $params['request'] = 'get';
+        $response = $this->CompleteRequest($params, $req, 1);
+        return $response;
+    }
+
     function getCelebrities($params){
         $req = array(
             'linked_msisdn' => $params['msisdn'],

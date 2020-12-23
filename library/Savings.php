@@ -29,7 +29,7 @@ class Savings extends Model {
                 $postData[$i]['map_id'] = $i;
                 $postData[$i]['reference_id'] = $value['id'];
                 $postData[$i]['reference_text'] = $value['ProductName'];
-                $xml .= $i . ') ' . $value['ProductName'] . ": ". $value['amount'] . PHP_EOL;
+                $xml .= $i . ') ' . $value['amount'] . '('.$value['pack_length'].$value['unit'].')/' . $value['period']. PHP_EOL;
 
                 $postData[$i]['phone_number'] = $params['msisdn'];
                 $i++;
@@ -38,6 +38,37 @@ class Savings extends Model {
             $final_response['options'] = $xml;
         } else {
             $final_response['responsecode'] = 506;
+        }
+        return $final_response;
+    }
+
+    function processPacks($params){
+        $categoryMap = $this->GetRequestReference($params['msisdn'], $params['subscriberInput']);
+        $sessionparams['pack_id'] = $categoryMap[0]['reference_id'];
+        $finalparams = array_filter(array_merge($params, $sessionparams));
+        $response = $this->saving->processPacks($finalparams);
+        $this->log->ExeLog($params, 'Savings::processPacks Response ' . var_export($response, true), 2);
+        $final_response = array();
+        if($response['status'] == 200 && $response['message'] == 'success') {
+            $final_response['responsecode'] = 500;
+            $xml = null;
+            $postData = array();
+            $i = 1;
+            foreach($response['categories'] as $key => $value){
+                $postData[$i]['map_id'] = $i;
+                $postData[$i]['reference_id'] = $value['id'];
+                $postData[$i]['reference_text'] = $value['category_name'];
+                $xml .= $i . ') ' . $value['category_name'] . PHP_EOL;
+
+                $postData[$i]['phone_number'] = $params['msisdn'];
+                $i++;
+            }
+            $this->StoreDateReferences($params, $postData);
+            $final_response['options'] = $xml;
+        } else if($response['status'] == 201 && $response['error_message'] == 'subscription_failed'){
+            $final_response['responsecode'] = 507;
+        } else {
+            $final_response['responsecode'] = 507;
         }
         return $final_response;
     }

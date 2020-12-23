@@ -32,7 +32,7 @@ class COREUSSD extends Savings {
         $this->log->ExeLog($params, "COREUSSD::SaveLanguage language to save " . $lang, 2);
         //Register Session On DB.
         $postLN['session_language_pref'] = $lang;
-        $this->db->UpdateData('vnd_log_session_data', $postLN, "session_id = {$params['sessionId']}");
+        $this->db->UpdateData('vnd_log_session_data', $postLN, "session_id = '{$params['sessionId']}'");
     }
 
     function MenuOptionHandler($params, $status) {
